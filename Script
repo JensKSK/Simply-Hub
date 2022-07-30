@@ -62,11 +62,13 @@ local UICorner_4 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local Walkspeednumber = Instance.new("TextLabel")
+local UniversalLabel = Instance.new("TextLabel")
 local CreditsPage = Instance.new("ScrollingFrame")
 local OwnerLabel = Instance.new("TextLabel")
 local DiscordServerLabel = Instance.new("TextLabel")
 local JensKSK = Instance.new("TextButton")
 local Server_2 = Instance.new("TextButton")
+local CreditsLabel = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
 local KeyLogin = Instance.new("Frame")
 local LoginLabel = Instance.new("TextLabel")
@@ -87,7 +89,7 @@ Main.BackgroundColor3 = Color3.fromRGB(19, 25, 35)
 Main.BorderColor3 = Color3.fromRGB(97, 119, 207)
 Main.BorderSizePixel = 4
 Main.Position = UDim2.new(0.332691073, 0, 0.233621761, 0)
-Main.Size = UDim2.new(0, 521, 0, 431)
+Main.Size = UDim2.new(0, 674, 0, 453)
 Main.Visible = false
 Main.Active = true
 Main.Draggable = true
@@ -169,10 +171,10 @@ jversion.Parent = Main
 jversion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 jversion.BackgroundTransparency = 1.000
 jversion.BorderSizePixel = 0
-jversion.Position = UDim2.new(0.917466402, 0, 0.0116009284, 0)
+jversion.Position = UDim2.new(0.930819511, 0, 0.0116009284, 0)
 jversion.Size = UDim2.new(0, 37, 0, 10)
 jversion.Font = Enum.Font.SourceSansSemibold
-jversion.Text = "j-0.5"
+jversion.Text = "j-0.05"
 jversion.TextColor3 = Color3.fromRGB(255, 255, 255)
 jversion.TextSize = 14.000
 
@@ -181,8 +183,8 @@ Mm2Page.Parent = Main
 Mm2Page.Active = true
 Mm2Page.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Mm2Page.BorderSizePixel = 0
-Mm2Page.Position = UDim2.new(0.257197708, 0, 0.0858468711, 0)
-Mm2Page.Size = UDim2.new(0, 387, 0, 394)
+Mm2Page.Position = UDim2.new(0.206752613, 0, 0.0924694091, 0)
+Mm2Page.Size = UDim2.new(0, 528, 0, 394)
 Mm2Page.CanvasSize = UDim2.new(0, 0, 9, 0)
 Mm2Page.ScrollBarThickness = 5
 
@@ -190,7 +192,7 @@ CoinFarm.Name = "CoinFarm"
 CoinFarm.Parent = Mm2Page
 CoinFarm.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 CoinFarm.BorderSizePixel = 0
-CoinFarm.Position = UDim2.new(0.161538467, 0, 0.170574322, 0)
+CoinFarm.Position = UDim2.new(0.716462672, 0, 0.0911041349, 0)
 CoinFarm.Size = UDim2.new(0, 72, 0, 23)
 CoinFarm.Font = Enum.Font.SourceSans
 CoinFarm.Text = "Coin Farm"
@@ -213,7 +215,7 @@ FreeXboxKnife.Name = "FreeXboxKnife"
 FreeXboxKnife.Parent = Mm2Page
 FreeXboxKnife.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 FreeXboxKnife.BorderSizePixel = 0
-FreeXboxKnife.Position = UDim2.new(0.376923084, 0, 0.0164108723, 0)
+FreeXboxKnife.Position = UDim2.new(0.310635209, 0, 0.016656151, 0)
 FreeXboxKnife.Size = UDim2.new(0, 72, 0, 23)
 FreeXboxKnife.Font = Enum.Font.SourceSans
 FreeXboxKnife.Text = "Click to get"
@@ -237,7 +239,7 @@ Server.Parent = Mm2Page
 Server.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 Server.BackgroundTransparency = 1.000
 Server.BorderSizePixel = 0
-Server.Position = UDim2.new(0.00512820436, 0, 0.148731217, 0)
+Server.Position = UDim2.new(0.0354312249, 0, 0.0854493976, 0)
 Server.Size = UDim2.new(0, 109, 0, 23)
 Server.Font = Enum.Font.SourceSans
 Server.Text = "Server:"
@@ -248,7 +250,7 @@ RejoinButton.Name = "RejoinButton"
 RejoinButton.Parent = Mm2Page
 RejoinButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 RejoinButton.BorderSizePixel = 0
-RejoinButton.Position = UDim2.new(0.161538467, 0, 0.154590815, 0)
+RejoinButton.Position = UDim2.new(0.191841498, 0, 0.0913089961, 0)
 RejoinButton.Size = UDim2.new(0, 72, 0, 23)
 RejoinButton.Font = Enum.Font.SourceSans
 RejoinButton.Text = "Rejoin Server"
@@ -260,7 +262,7 @@ Teleport.Parent = Mm2Page
 Teleport.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 Teleport.BackgroundTransparency = 1.000
 Teleport.BorderSizePixel = 0
-Teleport.Position = UDim2.new(0.00512820436, 0, 0.110190354, 0)
+Teleport.Position = UDim2.new(0.52406764, 0, 0.0383237861, 0)
 Teleport.Size = UDim2.new(0, 109, 0, 23)
 Teleport.Font = Enum.Font.SourceSans
 Teleport.Text = "Teleport:"
@@ -271,7 +273,7 @@ Lobby.Name = "Lobby"
 Lobby.Parent = Mm2Page
 Lobby.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Lobby.BorderSizePixel = 0
-Lobby.Position = UDim2.new(0.161538467, 0, 0.115921058, 0)
+Lobby.Position = UDim2.new(0.680477917, 0, 0.0440544896, 0)
 Lobby.Size = UDim2.new(0, 72, 0, 23)
 Lobby.Font = Enum.Font.SourceSans
 Lobby.Text = "Lobby"
@@ -282,7 +284,7 @@ Map.Name = "Map"
 Map.Parent = Mm2Page
 Map.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Map.BorderSizePixel = 0
-Map.Position = UDim2.new(0.161538467, 0, 0.124170609, 0)
+Map.Position = UDim2.new(0.680477917, 0, 0.0523040332, 0)
 Map.Size = UDim2.new(0, 72, 0, 23)
 Map.Font = Enum.Font.SourceSans
 Map.Text = "Map"
@@ -293,7 +295,7 @@ AboveMap.Name = "Above Map"
 AboveMap.Parent = Mm2Page
 AboveMap.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 AboveMap.BorderSizePixel = 0
-AboveMap.Position = UDim2.new(0.161538467, 0, 0.132420152, 0)
+AboveMap.Position = UDim2.new(0.680477917, 0, 0.0605535842, 0)
 AboveMap.Size = UDim2.new(0, 72, 0, 23)
 AboveMap.Font = Enum.Font.SourceSans
 AboveMap.Text = "Above Map"
@@ -304,7 +306,7 @@ VoitingRoom.Name = "Voiting Room"
 VoitingRoom.Parent = Mm2Page
 VoitingRoom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 VoitingRoom.BorderSizePixel = 0
-VoitingRoom.Position = UDim2.new(0.161538467, 0, 0.140154108, 0)
+VoitingRoom.Position = UDim2.new(0.680477917, 0, 0.0682875365, 0)
 VoitingRoom.Size = UDim2.new(0, 72, 0, 23)
 VoitingRoom.Font = Enum.Font.SourceSans
 VoitingRoom.Text = "Voiting Room"
@@ -316,7 +318,7 @@ Autofarm.Parent = Mm2Page
 Autofarm.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 Autofarm.BackgroundTransparency = 1.000
 Autofarm.BorderSizePixel = 0
-Autofarm.Position = UDim2.new(0.00512820436, 0, 0.164714709, 0)
+Autofarm.Position = UDim2.new(0.560052395, 0, 0.0852445215, 0)
 Autofarm.Size = UDim2.new(0, 109, 0, 23)
 Autofarm.Font = Enum.Font.SourceSans
 Autofarm.Text = "Autofarm:"
@@ -327,7 +329,7 @@ ClickforZombie.Name = "ClickforZombie"
 ClickforZombie.Parent = Mm2Page
 ClickforZombie.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforZombie.BorderSizePixel = 0
-ClickforZombie.Position = UDim2.new(0.392307729, 0, 0.0740885586, 0)
+ClickforZombie.Position = UDim2.new(0.327913791, 0, 0.0750696734, 0)
 ClickforZombie.Size = UDim2.new(0, 84, 0, 23)
 ClickforZombie.Font = Enum.Font.SourceSans
 ClickforZombie.Text = "Click for Zombie"
@@ -339,7 +341,7 @@ ESP.Parent = Mm2Page
 ESP.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 ESP.BackgroundTransparency = 1.000
 ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.00512820436, 0, 0.0823481306, 0)
+ESP.Position = UDim2.new(0.486188799, 0, 0.0102362838, 0)
 ESP.Size = UDim2.new(0, 109, 0, 23)
 ESP.Font = Enum.Font.SourceSans
 ESP.Text = "ESP:"
@@ -352,7 +354,7 @@ AllEsp.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 AllEsp.BackgroundTransparency = 1.000
 AllEsp.BorderSizePixel = 0
 AllEsp.Position = UDim2.new(0.433239311, 0, 0.984325886, 0)
-AllEsp.Size = UDim2.new(0, 68, 0, 15)
+AllEsp.Size = UDim2.new(0, 35, 0, 15)
 AllEsp.Font = Enum.Font.SourceSans
 AllEsp.Text = "All Esp"
 AllEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -497,7 +499,7 @@ ClickforSit.Name = "ClickforSit"
 ClickforSit.Parent = Mm2Page
 ClickforSit.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforSit.BorderSizePixel = 0
-ClickforSit.Position = UDim2.new(0.376923084, 0, 0.0246604215, 0)
+ClickforSit.Position = UDim2.new(0.310635209, 0, 0.0249057002, 0)
 ClickforSit.Size = UDim2.new(0, 72, 0, 23)
 ClickforSit.Font = Enum.Font.SourceSans
 ClickforSit.Text = "Click for Sit"
@@ -520,7 +522,7 @@ ClickforDab.Name = "ClickforDab"
 ClickforDab.Parent = Mm2Page
 ClickforDab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforDab.BorderSizePixel = 0
-ClickforDab.Position = UDim2.new(0.376923084, 0, 0.0329099707, 0)
+ClickforDab.Position = UDim2.new(0.310635209, 0, 0.0331552476, 0)
 ClickforDab.Size = UDim2.new(0, 72, 0, 23)
 ClickforDab.Font = Enum.Font.SourceSans
 ClickforDab.Text = "Click for Dab"
@@ -543,7 +545,7 @@ ClickforNinja.Name = "ClickforNinja"
 ClickforNinja.Parent = Mm2Page
 ClickforNinja.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforNinja.BorderSizePixel = 0
-ClickforNinja.Position = UDim2.new(0.376923084, 0, 0.0411595181, 0)
+ClickforNinja.Position = UDim2.new(0.310635209, 0, 0.0414047949, 0)
 ClickforNinja.Size = UDim2.new(0, 72, 0, 23)
 ClickforNinja.Font = Enum.Font.SourceSans
 ClickforNinja.Text = "Click for Ninja"
@@ -566,7 +568,7 @@ ClickforFloss.Name = "ClickforFloss"
 ClickforFloss.Parent = Mm2Page
 ClickforFloss.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforFloss.BorderSizePixel = 0
-ClickforFloss.Position = UDim2.new(0.376923084, 0, 0.0494090691, 0)
+ClickforFloss.Position = UDim2.new(0.310635209, 0, 0.049654346, 0)
 ClickforFloss.Size = UDim2.new(0, 72, 0, 23)
 ClickforFloss.Font = Enum.Font.SourceSans
 ClickforFloss.Text = "Click for Floss"
@@ -589,7 +591,7 @@ ClickforZen.Name = "ClickforZen"
 ClickforZen.Parent = Mm2Page
 ClickforZen.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforZen.BorderSizePixel = 0
-ClickforZen.Position = UDim2.new(0.376923084, 0, 0.0576586165, 0)
+ClickforZen.Position = UDim2.new(0.310635209, 0, 0.0579038933, 0)
 ClickforZen.Size = UDim2.new(0, 72, 0, 23)
 ClickforZen.Font = Enum.Font.SourceSans
 ClickforZen.Text = "Click for Zen"
@@ -612,7 +614,7 @@ ClickforHeadless.Name = "ClickforHeadless"
 ClickforHeadless.Parent = Mm2Page
 ClickforHeadless.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforHeadless.BorderSizePixel = 0
-ClickforHeadless.Position = UDim2.new(0.392307729, 0, 0.0658390075, 0)
+ClickforHeadless.Position = UDim2.new(0.327913791, 0, 0.0668201223, 0)
 ClickforHeadless.Size = UDim2.new(0, 84, 0, 23)
 ClickforHeadless.Font = Enum.Font.SourceSans
 ClickforHeadless.Text = "Click for Headless"
@@ -624,7 +626,7 @@ ZombieEmote.Parent = Mm2Page
 ZombieEmote.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 ZombieEmote.BackgroundTransparency = 1.000
 ZombieEmote.BorderSizePixel = 0
-ZombieEmote.Position = UDim2.new(0.0846153796, 0, 0.0730004907, 0)
+ZombieEmote.Position = UDim2.new(0.0846153796, 0, 0.0737363249, 0)
 ZombieEmote.Size = UDim2.new(0, 129, 0, 32)
 ZombieEmote.Font = Enum.Font.SourceSans
 ZombieEmote.Text = "Zombie Emote:"
@@ -648,8 +650,8 @@ UniversalPage.Parent = Main
 UniversalPage.Active = true
 UniversalPage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 UniversalPage.BorderSizePixel = 0
-UniversalPage.Position = UDim2.new(0.266794622, 0, 0.0858468711, 0)
-UniversalPage.Size = UDim2.new(0, 382, 0, 394)
+UniversalPage.Position = UDim2.new(0.207802609, 0, 0.0858468935, 0)
+UniversalPage.Size = UDim2.new(0, 524, 0, 394)
 UniversalPage.Visible = false
 UniversalPage.CanvasSize = UDim2.new(0, 0, 9, 0)
 UniversalPage.ScrollBarThickness = 5
@@ -659,7 +661,7 @@ FlyLabel.Parent = UniversalPage
 FlyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FlyLabel.BackgroundTransparency = 1.000
 FlyLabel.BorderSizePixel = 0
-FlyLabel.Position = UDim2.new(0.0230769236, 0, 0.0105101168, 0)
+FlyLabel.Position = UDim2.new(0.0230769236, 0, 0.00781205483, 0)
 FlyLabel.Size = UDim2.new(0, 60, 0, 25)
 FlyLabel.Font = Enum.Font.SourceSans
 FlyLabel.Text = "Fly"
@@ -704,7 +706,7 @@ Walkspeed.Parent = UniversalPage
 Walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Walkspeed.BackgroundTransparency = 1.000
 Walkspeed.BorderSizePixel = 0
-Walkspeed.Position = UDim2.new(0.0230769236, 0, 0.0205642544, 0)
+Walkspeed.Position = UDim2.new(0.0230769236, 0, 0.0178661924, 0)
 Walkspeed.Size = UDim2.new(0, 60, 0, 25)
 Walkspeed.Font = Enum.Font.SourceSans
 Walkspeed.Text = "Walkspeed"
@@ -713,14 +715,14 @@ Walkspeed.TextSize = 15.000
 
 Slider.Name = "Slider"
 Slider.Parent = Walkspeed
-Slider.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Slider.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Slider.Position = UDim2.new(1.55360353, 0, 0.360000014, 0)
 Slider.Size = UDim2.new(0, 270, 0, 7)
 
 UICorner_4.Parent = Slider
 
 TextButton.Parent = Slider
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0, 0, -0.714285731, 0)
 TextButton.Size = UDim2.new(0, 20, 0, 16)
@@ -736,20 +738,32 @@ Walkspeednumber.Parent = UniversalPage
 Walkspeednumber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Walkspeednumber.BackgroundTransparency = 1.000
 Walkspeednumber.BorderSizePixel = 0
-Walkspeednumber.Position = UDim2.new(0.123076931, 0, 0.0205642544, 0)
+Walkspeednumber.Position = UDim2.new(0.123076931, 0, 0.0178661924, 0)
 Walkspeednumber.Size = UDim2.new(0, 60, 0, 25)
 Walkspeednumber.Font = Enum.Font.SourceSans
 Walkspeednumber.Text = "16"
 Walkspeednumber.TextColor3 = Color3.fromRGB(255, 255, 255)
 Walkspeednumber.TextSize = 15.000
 
+UniversalLabel.Name = "UniversalLabel"
+UniversalLabel.Parent = UniversalPage
+UniversalLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UniversalLabel.BackgroundTransparency = 1.000
+UniversalLabel.BorderSizePixel = 0
+UniversalLabel.Position = UDim2.new(0.0230769236, 0, -3.68542969e-05, 0)
+UniversalLabel.Size = UDim2.new(0, 60, 0, 25)
+UniversalLabel.Font = Enum.Font.SourceSans
+UniversalLabel.Text = "Universal:"
+UniversalLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+UniversalLabel.TextSize = 17.000
+
 CreditsPage.Name = "CreditsPage"
 CreditsPage.Parent = Main
 CreditsPage.Active = true
 CreditsPage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CreditsPage.BorderSizePixel = 0
-CreditsPage.Position = UDim2.new(0.266794622, 0, 0.0858468711, 0)
-CreditsPage.Size = UDim2.new(0, 382, 0, 394)
+CreditsPage.Position = UDim2.new(0.207802609, 0, 0.0858468935, 0)
+CreditsPage.Size = UDim2.new(0, 524, 0, 394)
 CreditsPage.Visible = false
 CreditsPage.CanvasSize = UDim2.new(0, 0, 9, 0)
 CreditsPage.ScrollBarThickness = 5
@@ -759,7 +773,7 @@ OwnerLabel.Parent = CreditsPage
 OwnerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OwnerLabel.BackgroundTransparency = 1.000
 OwnerLabel.BorderSizePixel = 0
-OwnerLabel.Position = UDim2.new(0.0153846145, 0, 0.00919109583, 0)
+OwnerLabel.Position = UDim2.new(0.0153846145, 0, 0.00870053936, 0)
 OwnerLabel.Size = UDim2.new(0, 58, 0, 26)
 OwnerLabel.Font = Enum.Font.SourceSansBold
 OwnerLabel.Text = "Owner:"
@@ -771,7 +785,7 @@ DiscordServerLabel.Parent = CreditsPage
 DiscordServerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DiscordServerLabel.BackgroundTransparency = 1.000
 DiscordServerLabel.BorderSizePixel = 0
-DiscordServerLabel.Position = UDim2.new(0.0153846154, 0, 0.0158891156, 0)
+DiscordServerLabel.Position = UDim2.new(0.0153846154, 0, 0.0153985592, 0)
 DiscordServerLabel.Size = UDim2.new(0, 97, 0, 26)
 DiscordServerLabel.Font = Enum.Font.SourceSansBold
 DiscordServerLabel.Text = "Discord Server:"
@@ -783,7 +797,7 @@ JensKSK.Parent = CreditsPage
 JensKSK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 JensKSK.BackgroundTransparency = 1.000
 JensKSK.BorderSizePixel = 0
-JensKSK.Position = UDim2.new(0.184615389, 0, 0.0109956861, 0)
+JensKSK.Position = UDim2.new(0.144539058, 0, 0.0105051296, 0)
 JensKSK.Size = UDim2.new(0, 75, 0, 11)
 JensKSK.Font = Enum.Font.SourceSansBold
 JensKSK.Text = "JensKSK#9880"
@@ -795,18 +809,30 @@ Server_2.Parent = CreditsPage
 Server_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Server_2.BackgroundTransparency = 1.000
 Server_2.BorderSizePixel = 0
-Server_2.Position = UDim2.new(0.282051325, 0, 0.0177938864, 0)
+Server_2.Position = UDim2.new(0.213349044, 0, 0.0170580503, 0)
 Server_2.Size = UDim2.new(0, 169, 0, 11)
 Server_2.Font = Enum.Font.SourceSansBold
 Server_2.Text = "https://discord.gg/jg65DCzj6r"
 Server_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Server_2.TextSize = 15.000
 
+CreditsLabel.Name = "CreditsLabel"
+CreditsLabel.Parent = CreditsPage
+CreditsLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsLabel.BackgroundTransparency = 1.000
+CreditsLabel.BorderSizePixel = 0
+CreditsLabel.Position = UDim2.new(0.0153846145, 0, -0.000129482709, 0)
+CreditsLabel.Size = UDim2.new(0, 58, 0, 26)
+CreditsLabel.Font = Enum.Font.SourceSansBold
+CreditsLabel.Text = "Credits:"
+CreditsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsLabel.TextSize = 17.000
+
 Frame.Parent = Main
 Frame.BackgroundColor3 = Color3.fromRGB(97, 119, 207)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.134357005, 65, 0.064965196, 0)
-Frame.Size = UDim2.new(0, 381, 0, 2)
+Frame.Position = UDim2.new(0.111363441, 65, 0.0649651885, 0)
+Frame.Size = UDim2.new(0, 524, 0, 2)
 
 KeyLogin.Name = "KeyLogin"
 KeyLogin.Parent = SimplyHub
@@ -881,7 +907,7 @@ UICorner_8.Parent = GetKey
 
 -- Scripts:
 
-local function IORGX_fake_script() -- Mm2Button.MM2Page 
+local function RRKOPFV_fake_script() -- Mm2Button.MM2Page 
 	local script = Instance.new('LocalScript', Mm2Button)
 
 	script.Parent.Parent.Mm2Button.MouseButton1Click:Connect(function()
@@ -890,8 +916,8 @@ local function IORGX_fake_script() -- Mm2Button.MM2Page
 		script.Parent.Parent.Parent.CreditsPage.Visible = false
 	end)
 end
-coroutine.wrap(IORGX_fake_script)()
-local function TNTU_fake_script() -- UniversalButton.LocalScript 
+coroutine.wrap(RRKOPFV_fake_script)()
+local function KTKJIXU_fake_script() -- UniversalButton.LocalScript 
 	local script = Instance.new('LocalScript', UniversalButton)
 
 	script.Parent.Parent.UniversalButton.MouseButton1Click:Connect(function()
@@ -900,8 +926,8 @@ local function TNTU_fake_script() -- UniversalButton.LocalScript
 		script.Parent.Parent.Parent.CreditsPage.Visible = false
 	end)
 end
-coroutine.wrap(TNTU_fake_script)()
-local function DDSBIRN_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(KTKJIXU_fake_script)()
+local function BTBCOG_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.Parent.CreditsButton.MouseButton1Click:Connect(function()
@@ -910,8 +936,8 @@ local function DDSBIRN_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.Mm2Page.Visible = false
 	end)
 end
-coroutine.wrap(DDSBIRN_fake_script)()
-local function BTCI_fake_script() -- CoinFarm.LocalScript 
+coroutine.wrap(BTBCOG_fake_script)()
+local function JJVL_fake_script() -- CoinFarm.LocalScript 
 	local script = Instance.new('LocalScript', CoinFarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -945,64 +971,64 @@ local function BTCI_fake_script() -- CoinFarm.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BTCI_fake_script)()
-local function DEMB_fake_script() -- FreeXboxKnife.LocalScript 
+coroutine.wrap(JJVL_fake_script)()
+local function UYNQB_fake_script() -- FreeXboxKnife.LocalScript 
 	local script = Instance.new('LocalScript', FreeXboxKnife)
 
 	script.Parent.Parent.FreeXboxKnife.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").Remotes.Extras.IsXbox:FireServer()
 	end)
 end
-coroutine.wrap(DEMB_fake_script)()
-local function EGMLISU_fake_script() -- RejoinButton.LocalScript 
+coroutine.wrap(UYNQB_fake_script)()
+local function SRSEDO_fake_script() -- RejoinButton.LocalScript 
 	local script = Instance.new('LocalScript', RejoinButton)
 
 	script.Parent.Parent.RejoinButton.MouseButton1Click:Connect(function()
 		wait(0) game:GetService("TeleportService"):Teleport(142823291, LocalPlayer)
 	end)
 end
-coroutine.wrap(EGMLISU_fake_script)()
-local function AHMGW_fake_script() -- Lobby.LocalScript 
+coroutine.wrap(SRSEDO_fake_script)()
+local function GXQBRX_fake_script() -- Lobby.LocalScript 
 	local script = Instance.new('LocalScript', Lobby)
 
 	script.Parent.Parent.Lobby.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.800003, 135.550003, 44.4000015, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 	end)
 end
-coroutine.wrap(AHMGW_fake_script)()
-local function DBMIT_fake_script() -- Map.LocalScript 
+coroutine.wrap(GXQBRX_fake_script)()
+local function KULE_fake_script() -- Map.LocalScript 
 	local script = Instance.new('LocalScript', Map)
 
 	script.Parent.Parent.Map.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(DBMIT_fake_script)()
-local function UKUGRW_fake_script() -- AboveMap.LocalScript 
+coroutine.wrap(KULE_fake_script)()
+local function INYGDES_fake_script() -- AboveMap.LocalScript 
 	local script = Instance.new('LocalScript', AboveMap)
 
 	script.Parent.Parent["Above Map"].MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(UKUGRW_fake_script)()
-local function CQVKQYR_fake_script() -- VoitingRoom.LocalScript 
+coroutine.wrap(INYGDES_fake_script)()
+local function CERRLG_fake_script() -- VoitingRoom.LocalScript 
 	local script = Instance.new('LocalScript', VoitingRoom)
 
 	script.Parent.Parent["Voiting Room"].MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.298363, 140.69989, 80.9969711, -0.999223888, -6.22721359e-08, -0.0393909253, -6.53614478e-08, 1, 7.71391626e-08, 0.0393909253, 7.96539368e-08, -0.999223888)
 	end)
 end
-coroutine.wrap(CQVKQYR_fake_script)()
-local function XPIJE_fake_script() -- ClickforZombie.LocalScript 
+coroutine.wrap(CERRLG_fake_script)()
+local function XRQLH_fake_script() -- ClickforZombie.LocalScript 
 	local script = Instance.new('LocalScript', ClickforZombie)
 
 	script.Parent.Parent.ClickforZombie.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(XPIJE_fake_script)()
-local function GCVWXQ_fake_script() -- Toggle.Script 
+coroutine.wrap(XRQLH_fake_script)()
+local function QXRF_fake_script() -- Toggle.Script 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1029,8 +1055,8 @@ local function GCVWXQ_fake_script() -- Toggle.Script
 		end
 	end)
 end
-coroutine.wrap(GCVWXQ_fake_script)()
-local function ICIBFTG_fake_script() -- Toggle_2.Script 
+coroutine.wrap(QXRF_fake_script)()
+local function PGCLYP_fake_script() -- Toggle_2.Script 
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	local toggled = false -- The start state of the toggle
@@ -1056,8 +1082,8 @@ local function ICIBFTG_fake_script() -- Toggle_2.Script
 		end
 	end)
 end
-coroutine.wrap(ICIBFTG_fake_script)()
-local function QOXCD_fake_script() -- Toggle_3.Script 
+coroutine.wrap(PGCLYP_fake_script)()
+local function XSNBG_fake_script() -- Toggle_3.Script 
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	local toggled = false -- The start state of the toggle
@@ -1083,56 +1109,56 @@ local function QOXCD_fake_script() -- Toggle_3.Script
 		end
 	end)
 end
-coroutine.wrap(QOXCD_fake_script)()
-local function AKZU_fake_script() -- ClickforSit.LocalScript 
+coroutine.wrap(XSNBG_fake_script)()
+local function HFCON_fake_script() -- ClickforSit.LocalScript 
 	local script = Instance.new('LocalScript', ClickforSit)
 
 	script.Parent.Parent.ClickforSit.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(AKZU_fake_script)()
-local function YAZY_fake_script() -- ClickforDab.LocalScript 
+coroutine.wrap(HFCON_fake_script)()
+local function ZUPLWSD_fake_script() -- ClickforDab.LocalScript 
 	local script = Instance.new('LocalScript', ClickforDab)
 
 	script.Parent.Parent.ClickforDab.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(YAZY_fake_script)()
-local function XWKGPHF_fake_script() -- ClickforNinja.LocalScript 
+coroutine.wrap(ZUPLWSD_fake_script)()
+local function JCXJZMY_fake_script() -- ClickforNinja.LocalScript 
 	local script = Instance.new('LocalScript', ClickforNinja)
 
 	script.Parent.Parent.ClickforNinja.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(XWKGPHF_fake_script)()
-local function JTCGXPX_fake_script() -- ClickforFloss.LocalScript 
+coroutine.wrap(JCXJZMY_fake_script)()
+local function ZKGRKVR_fake_script() -- ClickforFloss.LocalScript 
 	local script = Instance.new('LocalScript', ClickforFloss)
 
 	script.Parent.Parent.ClickforFloss.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(JTCGXPX_fake_script)()
-local function GAKPG_fake_script() -- ClickforZen.LocalScript 
+coroutine.wrap(ZKGRKVR_fake_script)()
+local function SJPEIY_fake_script() -- ClickforZen.LocalScript 
 	local script = Instance.new('LocalScript', ClickforZen)
 
 	script.Parent.Parent.ClickforZen.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(GAKPG_fake_script)()
-local function VHLALE_fake_script() -- ClickforHeadless.LocalScript 
+coroutine.wrap(SJPEIY_fake_script)()
+local function URJWJ_fake_script() -- ClickforHeadless.LocalScript 
 	local script = Instance.new('LocalScript', ClickforHeadless)
 
 	script.Parent.Parent.ClickforHeadless.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(VHLALE_fake_script)()
-local function XQNSSL_fake_script() -- Toggle_4.Script 
+coroutine.wrap(URJWJ_fake_script)()
+local function CUDJOMT_fake_script() -- Toggle_4.Script 
 	local script = Instance.new('LocalScript', Toggle_4)
 
 	local toggled = false -- The start state of the toggle
@@ -1159,8 +1185,8 @@ local function XQNSSL_fake_script() -- Toggle_4.Script
 		end
 	end)
 end
-coroutine.wrap(XQNSSL_fake_script)()
-local function OAKRF_fake_script() -- JensKSK.LocalScript 
+coroutine.wrap(CUDJOMT_fake_script)()
+local function OYSOZEQ_fake_script() -- JensKSK.LocalScript 
 	local script = Instance.new('LocalScript', JensKSK)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1169,8 +1195,8 @@ local function OAKRF_fake_script() -- JensKSK.LocalScript
 		setclipboard("JensKSK#9880")
 	end)
 end
-coroutine.wrap(OAKRF_fake_script)()
-local function GFLI_fake_script() -- Server_2.LocalScript 
+coroutine.wrap(OYSOZEQ_fake_script)()
+local function BTXICV_fake_script() -- Server_2.LocalScript 
 	local script = Instance.new('LocalScript', Server_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1179,4 +1205,4 @@ local function GFLI_fake_script() -- Server_2.LocalScript
 		setclipboard("https://discord.gg/jg65DCzj6r")
 	end)
 end
-coroutine.wrap(GFLI_fake_script)()
+coroutine.wrap(BTXICV_fake_script)()
