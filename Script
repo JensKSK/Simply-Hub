@@ -11,9 +11,7 @@ local HubName = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local jversion = Instance.new("TextLabel")
 local Mm2Page = Instance.new("ScrollingFrame")
-local PageInformation = Instance.new("Frame")
-local Pagename = Instance.new("TextLabel")
-local Whatcanuse = Instance.new("TextLabel")
+local CoinFarm = Instance.new("TextButton")
 local XboxLabel = Instance.new("TextLabel")
 local FreeXboxKnife = Instance.new("TextButton")
 local FreeStuff = Instance.new("TextLabel")
@@ -52,11 +50,8 @@ local ClickforZen = Instance.new("TextButton")
 local HeadlessEmote = Instance.new("TextLabel")
 local ClickforHeadless = Instance.new("TextButton")
 local ZombieEmote = Instance.new("TextLabel")
-local CoinFarm = Instance.new("TextButton")
+local FreeStuff_2 = Instance.new("TextLabel")
 local UniversalPage = Instance.new("ScrollingFrame")
-local PageInformation_2 = Instance.new("Frame")
-local Pagename_2 = Instance.new("TextLabel")
-local Whatcanuse_2 = Instance.new("TextLabel")
 local FlyLabel = Instance.new("TextLabel")
 local Toggle_4 = Instance.new("ImageLabel")
 local Button_4 = Instance.new("TextButton")
@@ -67,29 +62,20 @@ local UICorner_4 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local Walkspeednumber = Instance.new("TextLabel")
-local star = Instance.new("ImageButton")
-local star2 = Instance.new("ImageButton")
-local ImageLabel = Instance.new("ImageLabel")
 local CreditsPage = Instance.new("ScrollingFrame")
-local PageInformation_3 = Instance.new("Frame")
-local Pagename_3 = Instance.new("TextLabel")
-local Whatcanuse_3 = Instance.new("TextLabel")
 local OwnerLabel = Instance.new("TextLabel")
 local DiscordServerLabel = Instance.new("TextLabel")
 local JensKSK = Instance.new("TextButton")
 local Server_2 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
 local KeyLogin = Instance.new("Frame")
 local LoginLabel = Instance.new("TextLabel")
 local UICorner_6 = Instance.new("UICorner")
-local star2_2 = Instance.new("ImageButton")
-local star_2 = Instance.new("ImageButton")
 local ChechKey = Instance.new("TextBox")
 local StartUI = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local GetKey = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local ImageLabel_3 = Instance.new("ImageLabel")
 
 SimplyHub.Name = "SimplyHub"
 SimplyHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -97,8 +83,9 @@ SimplyHub.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = SimplyHub
-Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Main.BorderColor3 = Color3.fromRGB(0, 85, 255)
+Main.BackgroundColor3 = Color3.fromRGB(19, 25, 35)
+Main.BorderColor3 = Color3.fromRGB(97, 119, 207)
+Main.BorderSizePixel = 4
 Main.Position = UDim2.new(0.332691073, 0, 0.233621761, 0)
 Main.Size = UDim2.new(0, 521, 0, 431)
 Main.Visible = false
@@ -108,7 +95,7 @@ Main.Draggable = true
 TabHolder.Name = "TabHolder"
 TabHolder.Parent = Main
 TabHolder.Active = true
-TabHolder.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TabHolder.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TabHolder.BorderSizePixel = 0
 TabHolder.Position = UDim2.new(0, 0, 0.102088168, 0)
 TabHolder.Size = UDim2.new(0, 125, 0, 387)
@@ -117,7 +104,7 @@ TabHolder.ScrollingEnabled = false
 
 Mm2Button.Name = "Mm2Button"
 Mm2Button.Parent = TabHolder
-Mm2Button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Mm2Button.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 Mm2Button.BorderSizePixel = 0
 Mm2Button.Position = UDim2.new(0.064000003, 0, 0.0130000003, 0)
 Mm2Button.Size = UDim2.new(0, 109, 0, 28)
@@ -130,7 +117,7 @@ UICorner.Parent = Mm2Button
 
 UniversalButton.Name = "UniversalButton"
 UniversalButton.Parent = TabHolder
-UniversalButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+UniversalButton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 UniversalButton.BorderSizePixel = 0
 UniversalButton.Position = UDim2.new(0.0639999956, 0, 0.0592293888, 0)
 UniversalButton.Size = UDim2.new(0, 105, 0, 28)
@@ -143,7 +130,7 @@ UICorner_2.Parent = UniversalButton
 
 CreditsButton.Name = "CreditsButton"
 CreditsButton.Parent = TabHolder
-CreditsButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+CreditsButton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 CreditsButton.BorderSizePixel = 0
 CreditsButton.Position = UDim2.new(0.064000003, 0, 0.106967524, 0)
 CreditsButton.Size = UDim2.new(0, 109, 0, 28)
@@ -182,53 +169,33 @@ jversion.Parent = Main
 jversion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 jversion.BackgroundTransparency = 1.000
 jversion.BorderSizePixel = 0
-jversion.Position = UDim2.new(0.879078686, 0, 0.0116009284, 0)
+jversion.Position = UDim2.new(0.917466402, 0, 0.0116009284, 0)
 jversion.Size = UDim2.new(0, 37, 0, 10)
 jversion.Font = Enum.Font.SourceSansSemibold
-jversion.Text = "j-0.4"
+jversion.Text = "j-0.5"
 jversion.TextColor3 = Color3.fromRGB(255, 255, 255)
 jversion.TextSize = 14.000
 
 Mm2Page.Name = "Mm2Page"
 Mm2Page.Parent = Main
 Mm2Page.Active = true
-Mm2Page.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Mm2Page.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Mm2Page.BorderSizePixel = 0
-Mm2Page.Position = UDim2.new(0.251439542, 0, 0.0858468711, 0)
-Mm2Page.Size = UDim2.new(0, 390, 0, 394)
+Mm2Page.Position = UDim2.new(0.257197708, 0, 0.0858468711, 0)
+Mm2Page.Size = UDim2.new(0, 387, 0, 394)
 Mm2Page.CanvasSize = UDim2.new(0, 0, 9, 0)
 Mm2Page.ScrollBarThickness = 5
 
-PageInformation.Name = "PageInformation"
-PageInformation.Parent = Mm2Page
-PageInformation.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-PageInformation.BorderSizePixel = 0
-PageInformation.Position = UDim2.new(0, 0, -0.0020623873, 0)
-PageInformation.Size = UDim2.new(0, 390, 0, 26)
-
-Pagename.Name = "Pagename"
-Pagename.Parent = PageInformation
-Pagename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pagename.BackgroundTransparency = 1.000
-Pagename.BorderSizePixel = 0
-Pagename.Position = UDim2.new(0, 0, 0.0384615399, 0)
-Pagename.Size = UDim2.new(0, 93, 0, 25)
-Pagename.Font = Enum.Font.SourceSansSemibold
-Pagename.Text = "MM2Page"
-Pagename.TextColor3 = Color3.fromRGB(255, 255, 255)
-Pagename.TextSize = 20.000
-
-Whatcanuse.Name = "Whatcanuse"
-Whatcanuse.Parent = PageInformation
-Whatcanuse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse.BackgroundTransparency = 1.000
-Whatcanuse.BorderSizePixel = 0
-Whatcanuse.Position = UDim2.new(0.261538476, 0, 0, 0)
-Whatcanuse.Size = UDim2.new(0, 163, 0, 25)
-Whatcanuse.Font = Enum.Font.SourceSansBold
-Whatcanuse.Text = "In Mm2 can you exploit!"
-Whatcanuse.TextColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse.TextSize = 14.000
+CoinFarm.Name = "CoinFarm"
+CoinFarm.Parent = Mm2Page
+CoinFarm.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CoinFarm.BorderSizePixel = 0
+CoinFarm.Position = UDim2.new(0.161538467, 0, 0.170574322, 0)
+CoinFarm.Size = UDim2.new(0, 72, 0, 23)
+CoinFarm.Font = Enum.Font.SourceSans
+CoinFarm.Text = "Coin Farm"
+CoinFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+CoinFarm.TextSize = 14.000
 
 XboxLabel.Name = "XboxLabel"
 XboxLabel.Parent = Mm2Page
@@ -244,7 +211,7 @@ XboxLabel.TextSize = 16.000
 
 FreeXboxKnife.Name = "FreeXboxKnife"
 FreeXboxKnife.Parent = Mm2Page
-FreeXboxKnife.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+FreeXboxKnife.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 FreeXboxKnife.BorderSizePixel = 0
 FreeXboxKnife.Position = UDim2.new(0.376923084, 0, 0.0164108723, 0)
 FreeXboxKnife.Size = UDim2.new(0, 72, 0, 23)
@@ -279,7 +246,7 @@ Server.TextSize = 19.000
 
 RejoinButton.Name = "RejoinButton"
 RejoinButton.Parent = Mm2Page
-RejoinButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RejoinButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 RejoinButton.BorderSizePixel = 0
 RejoinButton.Position = UDim2.new(0.161538467, 0, 0.154590815, 0)
 RejoinButton.Size = UDim2.new(0, 72, 0, 23)
@@ -302,7 +269,7 @@ Teleport.TextSize = 19.000
 
 Lobby.Name = "Lobby"
 Lobby.Parent = Mm2Page
-Lobby.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Lobby.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Lobby.BorderSizePixel = 0
 Lobby.Position = UDim2.new(0.161538467, 0, 0.115921058, 0)
 Lobby.Size = UDim2.new(0, 72, 0, 23)
@@ -313,7 +280,7 @@ Lobby.TextSize = 14.000
 
 Map.Name = "Map"
 Map.Parent = Mm2Page
-Map.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Map.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Map.BorderSizePixel = 0
 Map.Position = UDim2.new(0.161538467, 0, 0.124170609, 0)
 Map.Size = UDim2.new(0, 72, 0, 23)
@@ -324,7 +291,7 @@ Map.TextSize = 14.000
 
 AboveMap.Name = "Above Map"
 AboveMap.Parent = Mm2Page
-AboveMap.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AboveMap.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 AboveMap.BorderSizePixel = 0
 AboveMap.Position = UDim2.new(0.161538467, 0, 0.132420152, 0)
 AboveMap.Size = UDim2.new(0, 72, 0, 23)
@@ -335,7 +302,7 @@ AboveMap.TextSize = 14.000
 
 VoitingRoom.Name = "Voiting Room"
 VoitingRoom.Parent = Mm2Page
-VoitingRoom.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+VoitingRoom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 VoitingRoom.BorderSizePixel = 0
 VoitingRoom.Position = UDim2.new(0.161538467, 0, 0.140154108, 0)
 VoitingRoom.Size = UDim2.new(0, 72, 0, 23)
@@ -358,7 +325,7 @@ Autofarm.TextSize = 19.000
 
 ClickforZombie.Name = "ClickforZombie"
 ClickforZombie.Parent = Mm2Page
-ClickforZombie.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforZombie.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforZombie.BorderSizePixel = 0
 ClickforZombie.Position = UDim2.new(0.392307729, 0, 0.0740885586, 0)
 ClickforZombie.Size = UDim2.new(0, 84, 0, 23)
@@ -528,7 +495,7 @@ SitEmote.TextSize = 16.000
 
 ClickforSit.Name = "ClickforSit"
 ClickforSit.Parent = Mm2Page
-ClickforSit.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforSit.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforSit.BorderSizePixel = 0
 ClickforSit.Position = UDim2.new(0.376923084, 0, 0.0246604215, 0)
 ClickforSit.Size = UDim2.new(0, 72, 0, 23)
@@ -551,7 +518,7 @@ DabEmote.TextSize = 16.000
 
 ClickforDab.Name = "ClickforDab"
 ClickforDab.Parent = Mm2Page
-ClickforDab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforDab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforDab.BorderSizePixel = 0
 ClickforDab.Position = UDim2.new(0.376923084, 0, 0.0329099707, 0)
 ClickforDab.Size = UDim2.new(0, 72, 0, 23)
@@ -574,7 +541,7 @@ NinjaEmote.TextSize = 16.000
 
 ClickforNinja.Name = "ClickforNinja"
 ClickforNinja.Parent = Mm2Page
-ClickforNinja.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforNinja.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforNinja.BorderSizePixel = 0
 ClickforNinja.Position = UDim2.new(0.376923084, 0, 0.0411595181, 0)
 ClickforNinja.Size = UDim2.new(0, 72, 0, 23)
@@ -597,7 +564,7 @@ FlossEmote.TextSize = 16.000
 
 ClickforFloss.Name = "ClickforFloss"
 ClickforFloss.Parent = Mm2Page
-ClickforFloss.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforFloss.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforFloss.BorderSizePixel = 0
 ClickforFloss.Position = UDim2.new(0.376923084, 0, 0.0494090691, 0)
 ClickforFloss.Size = UDim2.new(0, 72, 0, 23)
@@ -620,7 +587,7 @@ ZenEmote.TextSize = 16.000
 
 ClickforZen.Name = "ClickforZen"
 ClickforZen.Parent = Mm2Page
-ClickforZen.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforZen.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforZen.BorderSizePixel = 0
 ClickforZen.Position = UDim2.new(0.376923084, 0, 0.0576586165, 0)
 ClickforZen.Size = UDim2.new(0, 72, 0, 23)
@@ -643,7 +610,7 @@ HeadlessEmote.TextSize = 16.000
 
 ClickforHeadless.Name = "ClickforHeadless"
 ClickforHeadless.Parent = Mm2Page
-ClickforHeadless.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ClickforHeadless.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ClickforHeadless.BorderSizePixel = 0
 ClickforHeadless.Position = UDim2.new(0.392307729, 0, 0.0658390075, 0)
 ClickforHeadless.Size = UDim2.new(0, 84, 0, 23)
@@ -664,56 +631,28 @@ ZombieEmote.Text = "Zombie Emote:"
 ZombieEmote.TextColor3 = Color3.fromRGB(255, 255, 255)
 ZombieEmote.TextSize = 16.000
 
-CoinFarm.Name = "CoinFarm"
-CoinFarm.Parent = Mm2Page
-CoinFarm.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-CoinFarm.BorderSizePixel = 0
-CoinFarm.Position = UDim2.new(0.161538467, 0, 0.170574322, 0)
-CoinFarm.Size = UDim2.new(0, 72, 0, 23)
-CoinFarm.Font = Enum.Font.SourceSans
-CoinFarm.Text = "Coin Farm"
-CoinFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-CoinFarm.TextSize = 14.000
+FreeStuff_2.Name = "FreeStuff"
+FreeStuff_2.Parent = Mm2Page
+FreeStuff_2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+FreeStuff_2.BackgroundTransparency = 1.000
+FreeStuff_2.BorderSizePixel = 0
+FreeStuff_2.Position = UDim2.new(0.00258397916, 0, -0.000161832199, 0)
+FreeStuff_2.Size = UDim2.new(0, 74, 0, 18)
+FreeStuff_2.Font = Enum.Font.SourceSans
+FreeStuff_2.Text = "MM2:"
+FreeStuff_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeStuff_2.TextSize = 19.000
 
 UniversalPage.Name = "UniversalPage"
 UniversalPage.Parent = Main
 UniversalPage.Active = true
-UniversalPage.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+UniversalPage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 UniversalPage.BorderSizePixel = 0
-UniversalPage.Position = UDim2.new(0.251439542, 0, 0.0858468711, 0)
-UniversalPage.Size = UDim2.new(0, 390, 0, 394)
+UniversalPage.Position = UDim2.new(0.266794622, 0, 0.0858468711, 0)
+UniversalPage.Size = UDim2.new(0, 382, 0, 394)
 UniversalPage.Visible = false
 UniversalPage.CanvasSize = UDim2.new(0, 0, 9, 0)
 UniversalPage.ScrollBarThickness = 5
-
-PageInformation_2.Name = "PageInformation"
-PageInformation_2.Parent = UniversalPage
-PageInformation_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-PageInformation_2.BorderSizePixel = 0
-PageInformation_2.Size = UDim2.new(0, 390, 0, 26)
-
-Pagename_2.Name = "Pagename"
-Pagename_2.Parent = PageInformation_2
-Pagename_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pagename_2.BackgroundTransparency = 1.000
-Pagename_2.BorderSizePixel = 0
-Pagename_2.Size = UDim2.new(0, 83, 0, 25)
-Pagename_2.Font = Enum.Font.SourceSansSemibold
-Pagename_2.Text = "Universal"
-Pagename_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Pagename_2.TextSize = 20.000
-
-Whatcanuse_2.Name = "Whatcanuse"
-Whatcanuse_2.Parent = PageInformation_2
-Whatcanuse_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse_2.BackgroundTransparency = 1.000
-Whatcanuse_2.BorderSizePixel = 0
-Whatcanuse_2.Position = UDim2.new(0.230769247, 0, 0, 0)
-Whatcanuse_2.Size = UDim2.new(0, 209, 0, 25)
-Whatcanuse_2.Font = Enum.Font.SourceSansBold
-Whatcanuse_2.Text = "UnivesalPage can you use in any Game!"
-Whatcanuse_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse_2.TextSize = 14.000
 
 FlyLabel.Name = "FlyLabel"
 FlyLabel.Parent = UniversalPage
@@ -804,72 +743,16 @@ Walkspeednumber.Text = "16"
 Walkspeednumber.TextColor3 = Color3.fromRGB(255, 255, 255)
 Walkspeednumber.TextSize = 15.000
 
-star.Name = "star"
-star.Parent = Main
-star.BackgroundTransparency = 1.000
-star.Position = UDim2.new(0.951055646, 0, -0.0104408432, 0)
-star.Size = UDim2.new(0, 25, 0, 25)
-star.ZIndex = 2
-star.Image = "rbxassetid://3926305904"
-star.ImageRectOffset = Vector2.new(116, 4)
-star.ImageRectSize = Vector2.new(24, 24)
-
-star2.Name = "star2"
-star2.Parent = Main
-star2.BackgroundTransparency = 1.000
-star2.Position = UDim2.new(0.202495158, 0, -0.00580047211, 0)
-star2.Size = UDim2.new(0, 25, 0, 25)
-star2.ZIndex = 2
-star2.Image = "rbxassetid://3926305904"
-star2.ImageRectOffset = Vector2.new(116, 4)
-star2.ImageRectSize = Vector2.new(24, 24)
-
-ImageLabel.Parent = Main
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.0326295607, 0, 0.749419928, 0)
-ImageLabel.Size = UDim2.new(0, 100, 0, 98)
-ImageLabel.Image = "rbxassetid://124832901"
-
 CreditsPage.Name = "CreditsPage"
 CreditsPage.Parent = Main
 CreditsPage.Active = true
-CreditsPage.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+CreditsPage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CreditsPage.BorderSizePixel = 0
-CreditsPage.Position = UDim2.new(0.251439542, 0, 0.0858468711, 0)
-CreditsPage.Size = UDim2.new(0, 390, 0, 394)
+CreditsPage.Position = UDim2.new(0.266794622, 0, 0.0858468711, 0)
+CreditsPage.Size = UDim2.new(0, 382, 0, 394)
 CreditsPage.Visible = false
 CreditsPage.CanvasSize = UDim2.new(0, 0, 9, 0)
 CreditsPage.ScrollBarThickness = 5
-
-PageInformation_3.Name = "PageInformation"
-PageInformation_3.Parent = CreditsPage
-PageInformation_3.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-PageInformation_3.BorderSizePixel = 0
-PageInformation_3.Size = UDim2.new(0, 390, 0, 26)
-
-Pagename_3.Name = "Pagename"
-Pagename_3.Parent = PageInformation_3
-Pagename_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pagename_3.BackgroundTransparency = 1.000
-Pagename_3.BorderSizePixel = 0
-Pagename_3.Size = UDim2.new(0, 91, 0, 25)
-Pagename_3.Font = Enum.Font.SourceSansSemibold
-Pagename_3.Text = "CreditsPage"
-Pagename_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Pagename_3.TextSize = 20.000
-
-Whatcanuse_3.Name = "Whatcanuse"
-Whatcanuse_3.Parent = PageInformation_3
-Whatcanuse_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse_3.BackgroundTransparency = 1.000
-Whatcanuse_3.BorderSizePixel = 0
-Whatcanuse_3.Position = UDim2.new(0.212820515, 0, 0, 0)
-Whatcanuse_3.Size = UDim2.new(0, 263, 0, 25)
-Whatcanuse_3.Font = Enum.Font.SourceSansBold
-Whatcanuse_3.Text = "In CreditsPage are the Workers of this Hub!"
-Whatcanuse_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Whatcanuse_3.TextSize = 14.000
 
 OwnerLabel.Name = "OwnerLabel"
 OwnerLabel.Parent = CreditsPage
@@ -919,16 +802,23 @@ Server_2.Text = "https://discord.gg/jg65DCzj6r"
 Server_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Server_2.TextSize = 15.000
 
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(97, 119, 207)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.134357005, 65, 0.064965196, 0)
+Frame.Size = UDim2.new(0, 381, 0, 2)
+
 KeyLogin.Name = "KeyLogin"
 KeyLogin.Parent = SimplyHub
-KeyLogin.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-KeyLogin.BorderColor3 = Color3.fromRGB(0, 85, 255)
+KeyLogin.BackgroundColor3 = Color3.fromRGB(19, 25, 35)
+KeyLogin.BorderColor3 = Color3.fromRGB(97, 119, 207)
+KeyLogin.BorderSizePixel = 4
 KeyLogin.Position = UDim2.new(0.390494496, 0, 0.348578483, 0)
 KeyLogin.Size = UDim2.new(0, 358, 0, 226)
 
 LoginLabel.Name = "LoginLabel"
 LoginLabel.Parent = KeyLogin
-LoginLabel.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+LoginLabel.BackgroundColor3 = Color3.fromRGB(40, 46, 54)
 LoginLabel.BorderSizePixel = 0
 LoginLabel.Position = UDim2.new(0.293296099, 0, 0.0663716793, 0)
 LoginLabel.Size = UDim2.new(0, 146, 0, 29)
@@ -939,30 +829,10 @@ LoginLabel.TextSize = 22.000
 
 UICorner_6.Parent = LoginLabel
 
-star2_2.Name = "star2"
-star2_2.Parent = KeyLogin
-star2_2.BackgroundTransparency = 1.000
-star2_2.Position = UDim2.new(0.930167556, 0, 0, 0)
-star2_2.Size = UDim2.new(0, 25, 0, 25)
-star2_2.ZIndex = 2
-star2_2.Image = "rbxassetid://3926305904"
-star2_2.ImageRectOffset = Vector2.new(116, 4)
-star2_2.ImageRectSize = Vector2.new(24, 24)
-
-star_2.Name = "star"
-star_2.Parent = KeyLogin
-star_2.BackgroundTransparency = 1.000
-star_2.Position = UDim2.new(-5.96046448e-08, 0, 0, 0)
-star_2.Size = UDim2.new(0, 25, 0, 25)
-star_2.ZIndex = 2
-star_2.Image = "rbxassetid://3926305904"
-star_2.ImageRectOffset = Vector2.new(116, 4)
-star_2.ImageRectSize = Vector2.new(24, 24)
-
 ChechKey.Name = "ChechKey"
 ChechKey.Parent = KeyLogin
-ChechKey.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ChechKey.BorderColor3 = Color3.fromRGB(0, 85, 255)
+ChechKey.BackgroundColor3 = Color3.fromRGB(40, 46, 54)
+ChechKey.BorderColor3 = Color3.fromRGB(97, 119, 207)
 ChechKey.Position = UDim2.new(0.293296069, 0, 0.473451346, 0)
 ChechKey.Size = UDim2.new(0, 147, 0, 35)
 ChechKey.ClearTextOnFocus = false
@@ -973,7 +843,7 @@ ChechKey.TextSize = 15.000
 
 StartUI.Name = "StartUI"
 StartUI.Parent = KeyLogin
-StartUI.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+StartUI.BackgroundColor3 = Color3.fromRGB(40, 46, 54)
 StartUI.BorderSizePixel = 0
 StartUI.Position = UDim2.new(0.363128483, 0, 0.71681416, 0)
 StartUI.Size = UDim2.new(0, 98, 0, 25)
@@ -993,7 +863,7 @@ UICorner_7.Parent = StartUI
 
 GetKey.Name = "GetKey"
 GetKey.Parent = KeyLogin
-GetKey.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+GetKey.BackgroundColor3 = Color3.fromRGB(40, 46, 54)
 GetKey.BorderSizePixel = 0
 GetKey.Position = UDim2.new(0.363128483, 0, 0.300884962, 0)
 GetKey.Size = UDim2.new(0, 98, 0, 25)
@@ -1009,25 +879,9 @@ end)
 
 UICorner_8.Parent = GetKey
 
-ImageLabel_2.Parent = KeyLogin
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BackgroundTransparency = 1.000
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(0, 0, 0.827433646, 0)
-ImageLabel_2.Size = UDim2.new(0, 43, 0, 39)
-ImageLabel_2.Image = "rbxassetid://124832901"
-
-ImageLabel_3.Parent = KeyLogin
-ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_3.BackgroundTransparency = 1.000
-ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Position = UDim2.new(0.879888296, 0, 0.827433646, 0)
-ImageLabel_3.Size = UDim2.new(0, 43, 0, 39)
-ImageLabel_3.Image = "rbxassetid://124832901"
-
 -- Scripts:
 
-local function WADR_fake_script() -- Mm2Button.MM2Page 
+local function IORGX_fake_script() -- Mm2Button.MM2Page 
 	local script = Instance.new('LocalScript', Mm2Button)
 
 	script.Parent.Parent.Mm2Button.MouseButton1Click:Connect(function()
@@ -1036,8 +890,8 @@ local function WADR_fake_script() -- Mm2Button.MM2Page
 		script.Parent.Parent.Parent.CreditsPage.Visible = false
 	end)
 end
-coroutine.wrap(WADR_fake_script)()
-local function EWOD_fake_script() -- UniversalButton.LocalScript 
+coroutine.wrap(IORGX_fake_script)()
+local function TNTU_fake_script() -- UniversalButton.LocalScript 
 	local script = Instance.new('LocalScript', UniversalButton)
 
 	script.Parent.Parent.UniversalButton.MouseButton1Click:Connect(function()
@@ -1046,8 +900,8 @@ local function EWOD_fake_script() -- UniversalButton.LocalScript
 		script.Parent.Parent.Parent.CreditsPage.Visible = false
 	end)
 end
-coroutine.wrap(EWOD_fake_script)()
-local function CGQN_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(TNTU_fake_script)()
+local function DDSBIRN_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.Parent.CreditsButton.MouseButton1Click:Connect(function()
@@ -1056,194 +910,8 @@ local function CGQN_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.Mm2Page.Visible = false
 	end)
 end
-coroutine.wrap(CGQN_fake_script)()
-local function MNFE_fake_script() -- FreeXboxKnife.LocalScript 
-	local script = Instance.new('LocalScript', FreeXboxKnife)
-
-	script.Parent.Parent.FreeXboxKnife.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").Remotes.Extras.IsXbox:FireServer()
-	end)
-end
-coroutine.wrap(MNFE_fake_script)()
-local function WOKSVZJ_fake_script() -- RejoinButton.LocalScript 
-	local script = Instance.new('LocalScript', RejoinButton)
-
-	script.Parent.Parent.RejoinButton.MouseButton1Click:Connect(function()
-		wait(0) game:GetService("TeleportService"):Teleport(142823291, LocalPlayer)
-	end)
-end
-coroutine.wrap(WOKSVZJ_fake_script)()
-local function PCFY_fake_script() -- Lobby.LocalScript 
-	local script = Instance.new('LocalScript', Lobby)
-
-	script.Parent.Parent.Lobby.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.800003, 135.550003, 44.4000015, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-	end)
-end
-coroutine.wrap(PCFY_fake_script)()
-local function ISHZMQ_fake_script() -- Map.LocalScript 
-	local script = Instance.new('LocalScript', Map)
-
-	script.Parent.Parent.Map.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(ISHZMQ_fake_script)()
-local function TVQXIIR_fake_script() -- AboveMap.LocalScript 
-	local script = Instance.new('LocalScript', AboveMap)
-
-	script.Parent.Parent["Above Map"].MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(TVQXIIR_fake_script)()
-local function XNOOQ_fake_script() -- VoitingRoom.LocalScript 
-	local script = Instance.new('LocalScript', VoitingRoom)
-
-	script.Parent.Parent["Voiting Room"].MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.298363, 140.69989, 80.9969711, -0.999223888, -6.22721359e-08, -0.0393909253, -6.53614478e-08, 1, 7.71391626e-08, 0.0393909253, 7.96539368e-08, -0.999223888)
-	end)
-end
-coroutine.wrap(XNOOQ_fake_script)()
-local function IZBXXDM_fake_script() -- ClickforZombie.LocalScript 
-	local script = Instance.new('LocalScript', ClickforZombie)
-
-	script.Parent.Parent.ClickforZombie.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(IZBXXDM_fake_script)()
-local function YQUWDLY_fake_script() -- Toggle.Script 
-	local script = Instance.new('LocalScript', Toggle)
-
-	local toggled = false -- The start state of the toggle
-	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
-	
-	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
-		if debounce == false then
-			if toggled == true then -- If the toggle is already on
-				print("All Esp")
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = false
-			elseif toggled == false then -- If the toggle isnt already on
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(0, 85, 255)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = true
-			end
-		end
-	end)
-end
-coroutine.wrap(YQUWDLY_fake_script)()
-local function QGBB_fake_script() -- Toggle_2.Script 
-	local script = Instance.new('LocalScript', Toggle_2)
-
-	local toggled = false -- The start state of the toggle
-	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
-	
-	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
-		if debounce == false then
-			if toggled == true then -- If the toggle is already on
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = false
-			elseif toggled == false then -- If the toggle isnt already on
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(0, 85, 255)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = true
-			end
-		end
-	end)
-end
-coroutine.wrap(QGBB_fake_script)()
-local function LGICNWL_fake_script() -- Toggle_3.Script 
-	local script = Instance.new('LocalScript', Toggle_3)
-
-	local toggled = false -- The start state of the toggle
-	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
-	
-	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
-		if debounce == false then
-			if toggled == true then -- If the toggle is already on
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = false
-			elseif toggled == false then -- If the toggle isnt already on
-				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(0, 85, 255)}):Play()
-				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
-				wait(0.25)
-				debounce = false
-				toggled = true
-			end
-		end
-	end)
-end
-coroutine.wrap(LGICNWL_fake_script)()
-local function EWFRRU_fake_script() -- ClickforSit.LocalScript 
-	local script = Instance.new('LocalScript', ClickforSit)
-
-	script.Parent.Parent.ClickforSit.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(EWFRRU_fake_script)()
-local function OKOAJ_fake_script() -- ClickforDab.LocalScript 
-	local script = Instance.new('LocalScript', ClickforDab)
-
-	script.Parent.Parent.ClickforDab.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(OKOAJ_fake_script)()
-local function DTAO_fake_script() -- ClickforNinja.LocalScript 
-	local script = Instance.new('LocalScript', ClickforNinja)
-
-	script.Parent.Parent.ClickforNinja.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(DTAO_fake_script)()
-local function KOFYC_fake_script() -- ClickforFloss.LocalScript 
-	local script = Instance.new('LocalScript', ClickforFloss)
-
-	script.Parent.Parent.ClickforFloss.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(KOFYC_fake_script)()
-local function HTJFUPF_fake_script() -- ClickforZen.LocalScript 
-	local script = Instance.new('LocalScript', ClickforZen)
-
-	script.Parent.Parent.ClickforZen.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(HTJFUPF_fake_script)()
-local function QFQF_fake_script() -- ClickforHeadless.LocalScript 
-	local script = Instance.new('LocalScript', ClickforHeadless)
-
-	script.Parent.Parent.ClickforHeadless.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(QFQF_fake_script)()
-local function BRNDA_fake_script() -- CoinFarm.LocalScript 
+coroutine.wrap(DDSBIRN_fake_script)()
+local function BTCI_fake_script() -- CoinFarm.LocalScript 
 	local script = Instance.new('LocalScript', CoinFarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1277,8 +945,194 @@ local function BRNDA_fake_script() -- CoinFarm.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BRNDA_fake_script)()
-local function GJMYLB_fake_script() -- Toggle_4.Script 
+coroutine.wrap(BTCI_fake_script)()
+local function DEMB_fake_script() -- FreeXboxKnife.LocalScript 
+	local script = Instance.new('LocalScript', FreeXboxKnife)
+
+	script.Parent.Parent.FreeXboxKnife.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").Remotes.Extras.IsXbox:FireServer()
+	end)
+end
+coroutine.wrap(DEMB_fake_script)()
+local function EGMLISU_fake_script() -- RejoinButton.LocalScript 
+	local script = Instance.new('LocalScript', RejoinButton)
+
+	script.Parent.Parent.RejoinButton.MouseButton1Click:Connect(function()
+		wait(0) game:GetService("TeleportService"):Teleport(142823291, LocalPlayer)
+	end)
+end
+coroutine.wrap(EGMLISU_fake_script)()
+local function AHMGW_fake_script() -- Lobby.LocalScript 
+	local script = Instance.new('LocalScript', Lobby)
+
+	script.Parent.Parent.Lobby.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.800003, 135.550003, 44.4000015, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end)
+end
+coroutine.wrap(AHMGW_fake_script)()
+local function DBMIT_fake_script() -- Map.LocalScript 
+	local script = Instance.new('LocalScript', Map)
+
+	script.Parent.Parent.Map.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(DBMIT_fake_script)()
+local function UKUGRW_fake_script() -- AboveMap.LocalScript 
+	local script = Instance.new('LocalScript', AboveMap)
+
+	script.Parent.Parent["Above Map"].MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(UKUGRW_fake_script)()
+local function CQVKQYR_fake_script() -- VoitingRoom.LocalScript 
+	local script = Instance.new('LocalScript', VoitingRoom)
+
+	script.Parent.Parent["Voiting Room"].MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.298363, 140.69989, 80.9969711, -0.999223888, -6.22721359e-08, -0.0393909253, -6.53614478e-08, 1, 7.71391626e-08, 0.0393909253, 7.96539368e-08, -0.999223888)
+	end)
+end
+coroutine.wrap(CQVKQYR_fake_script)()
+local function XPIJE_fake_script() -- ClickforZombie.LocalScript 
+	local script = Instance.new('LocalScript', ClickforZombie)
+
+	script.Parent.Parent.ClickforZombie.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(XPIJE_fake_script)()
+local function GCVWXQ_fake_script() -- Toggle.Script 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local toggled = false -- The start state of the toggle
+	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
+	
+	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
+		if debounce == false then
+			if toggled == true then -- If the toggle is already on
+				print("All Esp")
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = false
+			elseif toggled == false then -- If the toggle isnt already on
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(50, 111, 245)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = true
+			end
+		end
+	end)
+end
+coroutine.wrap(GCVWXQ_fake_script)()
+local function ICIBFTG_fake_script() -- Toggle_2.Script 
+	local script = Instance.new('LocalScript', Toggle_2)
+
+	local toggled = false -- The start state of the toggle
+	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
+	
+	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
+		if debounce == false then
+			if toggled == true then -- If the toggle is already on
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = false
+			elseif toggled == false then -- If the toggle isnt already on
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(50, 111, 245)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = true
+			end
+		end
+	end)
+end
+coroutine.wrap(ICIBFTG_fake_script)()
+local function QOXCD_fake_script() -- Toggle_3.Script 
+	local script = Instance.new('LocalScript', Toggle_3)
+
+	local toggled = false -- The start state of the toggle
+	local debounce = false -- Debounce / cooldown so you cant spam the toggle and break it
+	
+	script.Parent.Button.MouseButton1Click:Connect(function() -- Gets executed when you click the button
+		if debounce == false then
+			if toggled == true then -- If the toggle is already on
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(200, 200, 200)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(0,2,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = false
+			elseif toggled == false then -- If the toggle isnt already on
+				debounce = true
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(50, 111, 245)}):Play()
+				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
+				wait(0.25)
+				debounce = false
+				toggled = true
+			end
+		end
+	end)
+end
+coroutine.wrap(QOXCD_fake_script)()
+local function AKZU_fake_script() -- ClickforSit.LocalScript 
+	local script = Instance.new('LocalScript', ClickforSit)
+
+	script.Parent.Parent.ClickforSit.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(AKZU_fake_script)()
+local function YAZY_fake_script() -- ClickforDab.LocalScript 
+	local script = Instance.new('LocalScript', ClickforDab)
+
+	script.Parent.Parent.ClickforDab.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(YAZY_fake_script)()
+local function XWKGPHF_fake_script() -- ClickforNinja.LocalScript 
+	local script = Instance.new('LocalScript', ClickforNinja)
+
+	script.Parent.Parent.ClickforNinja.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(XWKGPHF_fake_script)()
+local function JTCGXPX_fake_script() -- ClickforFloss.LocalScript 
+	local script = Instance.new('LocalScript', ClickforFloss)
+
+	script.Parent.Parent.ClickforFloss.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(JTCGXPX_fake_script)()
+local function GAKPG_fake_script() -- ClickforZen.LocalScript 
+	local script = Instance.new('LocalScript', ClickforZen)
+
+	script.Parent.Parent.ClickforZen.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(GAKPG_fake_script)()
+local function VHLALE_fake_script() -- ClickforHeadless.LocalScript 
+	local script = Instance.new('LocalScript', ClickforHeadless)
+
+	script.Parent.Parent.ClickforHeadless.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(VHLALE_fake_script)()
+local function XQNSSL_fake_script() -- Toggle_4.Script 
 	local script = Instance.new('LocalScript', Toggle_4)
 
 	local toggled = false -- The start state of the toggle
@@ -1296,7 +1150,7 @@ local function GJMYLB_fake_script() -- Toggle_4.Script
 				toggled = false
 			elseif toggled == false then -- If the toggle isnt already on
 				debounce = true
-				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(0, 85, 255)}):Play()
+				game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {ImageColor3 = Color3.fromRGB(50, 111, 245)}):Play()
 				game:GetService("TweenService"):Create(script.Parent.Circle, TweenInfo.new(0.25), {Position = UDim2.new(1,-20,0,2)}):Play()
 				wait(0.25)
 				debounce = false
@@ -1305,8 +1159,8 @@ local function GJMYLB_fake_script() -- Toggle_4.Script
 		end
 	end)
 end
-coroutine.wrap(GJMYLB_fake_script)()
-local function FJIG_fake_script() -- JensKSK.LocalScript 
+coroutine.wrap(XQNSSL_fake_script)()
+local function OAKRF_fake_script() -- JensKSK.LocalScript 
 	local script = Instance.new('LocalScript', JensKSK)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1315,8 +1169,8 @@ local function FJIG_fake_script() -- JensKSK.LocalScript
 		setclipboard("JensKSK#9880")
 	end)
 end
-coroutine.wrap(FJIG_fake_script)()
-local function VCFUJSD_fake_script() -- Server_2.LocalScript 
+coroutine.wrap(OAKRF_fake_script)()
+local function GFLI_fake_script() -- Server_2.LocalScript 
 	local script = Instance.new('LocalScript', Server_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1325,4 +1179,4 @@ local function VCFUJSD_fake_script() -- Server_2.LocalScript
 		setclipboard("https://discord.gg/jg65DCzj6r")
 	end)
 end
-coroutine.wrap(VCFUJSD_fake_script)()
+coroutine.wrap(GFLI_fake_script)()
